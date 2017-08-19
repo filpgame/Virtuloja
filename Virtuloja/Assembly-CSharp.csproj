@@ -163,11 +163,11 @@
  <Reference Include="UnityEngine.HoloLens">
  <HintPath>/Applications/Unity 2017/Unity 2017.app/Contents/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
  </Reference>
- <Reference Include="Vuforia.UnityExtensions">
- <HintPath>/Users/lsamorim/Documents/Development/Virtuloja/Virtuloja/Assets/Vuforia/Scripts/Internal/Vuforia.UnityExtensions.dll</HintPath>
- </Reference>
  <Reference Include="zxing.unity">
  <HintPath>/Users/lsamorim/Documents/Development/Virtuloja/Virtuloja/Assets/Scripts/QRCode/zxing.unity.dll</HintPath>
+ </Reference>
+ <Reference Include="Vuforia.UnityExtensions">
+ <HintPath>/Users/lsamorim/Documents/Development/Virtuloja/Virtuloja/Assets/Vuforia/Scripts/Internal/Vuforia.UnityExtensions.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

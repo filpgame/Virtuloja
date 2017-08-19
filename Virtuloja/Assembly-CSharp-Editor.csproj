@@ -144,14 +144,14 @@
  <Reference Include="UnityEditor.OSXStandalone.Extensions">
  <HintPath>/Applications/Unity 2017/Unity 2017.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll</HintPath>
  </Reference>
+ <Reference Include="zxing.unity">
+ <HintPath>/Users/lsamorim/Documents/Development/Virtuloja/Virtuloja/Assets/Scripts/QRCode/zxing.unity.dll</HintPath>
+ </Reference>
  <Reference Include="Vuforia.UnityExtensions.Editor">
  <HintPath>/Users/lsamorim/Documents/Development/Virtuloja/Virtuloja/Assets/Vuforia/Editor/Scripts/Vuforia.UnityExtensions.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Vuforia.UnityExtensions">
  <HintPath>/Users/lsamorim/Documents/Development/Virtuloja/Virtuloja/Assets/Vuforia/Scripts/Internal/Vuforia.UnityExtensions.dll</HintPath>
- </Reference>
- <Reference Include="zxing.unity">
- <HintPath>/Users/lsamorim/Documents/Development/Virtuloja/Virtuloja/Assets/Scripts/QRCode/zxing.unity.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.iOS.Extensions.Xcode">
  <HintPath>/Applications/Unity 2017/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
