@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System;
-
+using System.Linq;
 public class ApiService : MonoBehaviour
 {
 	private static ApiService _instance;
@@ -35,8 +35,21 @@ public class ApiService : MonoBehaviour
 
 	public IEnumerator GetProduct(string globalId, Action<Product> callback)
 	{
-		yield return new WWW (_baseUrl + string.Format("productGlobalId/{0}", globalId));
+		var www = new WWW (_baseUrl + string.Format("productGlobalId/{0}", globalId));
 
-		callback.Invoke (new Product (){ ID="1", GlobalID=1, Value= 10.00, Description= "Nada nada nada nada.."});
+		yield return www;
+
+		string jsonData = "";
+		if (string.IsNullOrEmpty(www.error)) {
+			jsonData = System.Text.Encoding.UTF8.GetString(www.bytes, 3, www.bytes.Length - 3);  // Skip thr first 3 bytes (i.e. the UTF8 BOM)
+			JSONObject json = new JSONObject(jsonData);   // JSONObject works now
+
+			var product = new Product ();
+			product.ID = json.list.FirstOrDefault ().GetField ("ID").str;
+			product.GlobalID = json.list.FirstOrDefault ().GetField ("GlobalID").useInt;
+		}
+
+		//www.text;
+		//callback.Invoke (new Product (){ ID="1", GlobalID=1, Value= 10.00, Description= "Nada nada nada nada.."});
 	}
 }

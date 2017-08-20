@@ -19,7 +19,7 @@ public class ProductView : MonoBehaviour
 
 			_selectedQuantity = Mathf.Max(0, value);
 			_quantityText.text = _selectedQuantity.ToString();
-			_totalAmountText.text = (Product.Value * _selectedQuantity).ToString ();
+			_totalAmountText.text = "R$ " + (Product.Value * _selectedQuantity).ToString("#.##");
 
 		}
 	}

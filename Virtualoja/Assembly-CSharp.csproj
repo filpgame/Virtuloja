@@ -64,6 +64,9 @@
      <Compile Include="Assets\Custom\Scripts\Models\User.cs" />
      <Compile Include="Assets\Custom\Scripts\OrderManager.cs" />
      <Compile Include="Assets\Custom\Scripts\Services\ApiService.cs" />
+     <Compile Include="Assets\JSON\JSONObject.cs" />
+     <Compile Include="Assets\JSON\JSONTemplates.cs" />
+     <Compile Include="Assets\JSON\VectorTemplates.cs" />
      <Compile Include="Assets\Scripts\ARVRAboutManager.cs" />
      <Compile Include="Assets\Scripts\Autofocus.cs" />
      <Compile Include="Assets\Scripts\BackToAbout.cs" />
@@ -112,6 +115,7 @@
      <Compile Include="Assets\Vuforia\Scripts\WordBehaviour.cs" />
      <None Include="Assets\Plugins\Android\AndroidManifest.xml" />
      <None Include="Assets\Vuforia\Shaders\ColoredLines.shader" />
+     <None Include="Assets\JSON\readme.txt" />
      <None Include="Assets\Shaders\TransparentUnlit.shader" />
      <None Include="Assets\link.xml" />
      <None Include="Assets\Vuforia\Shaders\VertexLitWithZ.shader" />
@@ -119,8 +123,8 @@
      <None Include="Assets\Vuforia\Shaders\RenderVideoBackground.shader" />
      <None Include="Assets\readme_SDK.txt" />
      <None Include="Assets\StreamingAssets\QCAR\Stones.xml" />
-     <None Include="Assets\StreamingAssets\Vuforia\Virtuloja.xml" />
      <None Include="Assets\Vuforia\Shaders\VideoBackground.shader" />
+     <None Include="Assets\StreamingAssets\Vuforia\Virtuloja.xml" />
      <None Include="Assets\license_3rdpartynotice.txt" />
      <None Include="Assets\Shaders\OverlayMesh.shader" />
      <None Include="Assets\Vuforia\Editor\WebcamProfiles\profiles.xml" />
