@@ -20,6 +20,9 @@ public class VRColliderButton : MonoBehaviour, IVRButton
 	[SerializeField]
 	private string _onClickMethod;
 
+	[SerializeField]
+	private bool _multipleHits = false;
+
 	private bool _canSendOnClick = true;
 
 	public void Defocus()
@@ -40,7 +43,7 @@ public class VRColliderButton : MonoBehaviour, IVRButton
 
 	void Update()
 	{
-		if (_isFocused && _canSendOnClick)
+		if (_isFocused && (_canSendOnClick || _multipleHits))
 		{
 			_currentActivationTime += Time.deltaTime;
 
@@ -49,6 +52,7 @@ public class VRColliderButton : MonoBehaviour, IVRButton
 				if (_onClickTarget != null) {
 					_onClickTarget.SendMessage (_onClickMethod);
 					_canSendOnClick = false;
+					_currentActivationTime = 0;
 				}
 			}
 		}
