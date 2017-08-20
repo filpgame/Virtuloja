@@ -37,5 +37,6 @@ public class ApiService : MonoBehaviour
 	{
 		yield return new WWW (_baseUrl + string.Format("productGlobalId/{0}", globalId));
 
+		callback.Invoke (new Product (){ ID="1", GlobalID=1, Value= 10.00, Description= "Nada nada nada nada.."});
 	}
 }

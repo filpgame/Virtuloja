@@ -28,14 +28,21 @@ public class ProductView : MonoBehaviour
 	private Vuforia.DefaultTrackableEventHandler _trackableEventHandler;
 
 	[SerializeField]
-	private Text _quantityText, _totalAmountText;
+	private Text _nameText, _quantityText, _totalAmountText;
 
 	void Start()
 	{
 		_trackableEventHandler.OnTrackingFounded += () =>
 		{
-			ApiService.Instance.GetProduct(GlobalId, (p) => { Product = p; SelectedQuantity = 1;});
+			StartCoroutine(ApiService.Instance.GetProduct(GlobalId, SetProduct));
 		};
+	}
+
+	private void SetProduct(Product product)
+	{
+		Product = product;
+		_nameText.text = product.Description;
+		SelectedQuantity = 1;
 	}
 
 	public void AddProduct()

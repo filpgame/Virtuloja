@@ -6,6 +6,7 @@ public class CheckInView : MonoBehaviour
 	[SerializeField]
 	private GameObject _loadingObject;
 
+
 	public void CheckIn()
 	{
 		Debug.Log ("loading");

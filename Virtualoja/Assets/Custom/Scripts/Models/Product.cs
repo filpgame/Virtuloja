@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class Product
 {
-	public string Id {
+	public string ID {
 		get;
 		set;
 	}
 
-	public long GlobalId {
+	public long GlobalID {
 		get;
 		set;
 	}
