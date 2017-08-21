@@ -44,9 +44,11 @@ public class ApiService : MonoBehaviour
 			jsonData = System.Text.Encoding.UTF8.GetString(www.bytes, 3, www.bytes.Length - 3);  // Skip thr first 3 bytes (i.e. the UTF8 BOM)
 			JSONObject json = new JSONObject(jsonData);   // JSONObject works now
 
-			var product = new Product ();
-			product.ID = json.list.FirstOrDefault ().GetField ("ID").str;
-			product.GlobalID = json.list.FirstOrDefault ().GetField ("GlobalID").useInt;
+//			var product = new Product ();
+//			product.ID = json.list.FirstOrDefault ().GetField ("ID").str;
+//			product.GlobalID = json.list.FirstOrDefault ().GetField ("GlobalID").;
+//			product.Value = json.list.FirstOrDefault ().GetField ("Value");
+//			product.Description = json.list.FirstOrDefault ().GetField ("Description").str;
 		}
 
 		//www.text;

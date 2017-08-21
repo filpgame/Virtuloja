@@ -2,25 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[System.Serializable]
 public class Product
 {
-	public string ID {
-		get;
-		set;
-	}
+	public string ID;
 
-	public long GlobalID {
-		get;
-		set;
-	}
+	public long GlobalID;
 
-	public double Value {
-		get;
-		set;
-	}
+	public double Value;
 
-	public string Description {
-		get;
-		set;
-	}
+	public string Description;
 }

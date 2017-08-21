@@ -56,7 +56,10 @@
      <Compile Include="Assets\Common\TapHandler.cs" />
      <Compile Include="Assets\Common\TrackableSettings.cs" />
      <Compile Include="Assets\Custom\Scripts\Interfaces\CheckInView.cs" />
+     <Compile Include="Assets\Custom\Scripts\Interfaces\CheckoutTrackableHandler.cs" />
+     <Compile Include="Assets\Custom\Scripts\Interfaces\CheckoutView.cs" />
      <Compile Include="Assets\Custom\Scripts\Interfaces\IVRButton.cs" />
+     <Compile Include="Assets\Custom\Scripts\Interfaces\ProductTrackableHandler.cs" />
      <Compile Include="Assets\Custom\Scripts\Interfaces\ProductView.cs" />
      <Compile Include="Assets\Custom\Scripts\Interfaces\VRColliderButton.cs" />
      <Compile Include="Assets\Custom\Scripts\Models\Order.cs" />
@@ -130,6 +133,7 @@
      <None Include="Assets\Vuforia\Editor\WebcamProfiles\profiles.xml" />
      <None Include="Assets\Vuforia\Shaders\DepthMask.shader" />
      <None Include="Assets\Shaders\BlackMask.shader" />
+     <None Include="Assets\Plugins\Pixelplacement\iTween\ReadMe!\ReadMe!.txt" />
      <None Include="Assets\Vuforia\Shaders\ClippingMask.shader" />
      <None Include="Assets\Vuforia\Shaders\BrightTexture.shader" />
      <None Include="Assets\Vuforia\Shaders\Text3D.shader" />
@@ -143,6 +147,10 @@
  <Reference Include="Vuforia.UnityExtensions">
  <HintPath>/Users/lsamorim/Documents/Development/Virtuloja/Virtualoja/Assets/Vuforia/Scripts/Internal/Vuforia.UnityExtensions.dll</HintPath>
  </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{25CDB766-F294-CA35-668B-78AB4F966CD8}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

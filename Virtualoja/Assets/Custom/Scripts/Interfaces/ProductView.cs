@@ -4,12 +4,10 @@ using UnityEngine.UI;
 
 public class ProductView : MonoBehaviour
 {
-	public string GlobalId;
+	//public string GlobalId;
 
-	public Product Product {
-		get;
-		set;
-	}
+	[SerializeField]
+	public Product Product;
 
 	private int _selectedQuantity;
 	private int SelectedQuantity
@@ -25,7 +23,7 @@ public class ProductView : MonoBehaviour
 	}
 
 	[SerializeField]
-	private Vuforia.DefaultTrackableEventHandler _trackableEventHandler;
+	private ProductTrackableHandler _trackableEventHandler;
 
 	[SerializeField]
 	private Text _nameText, _quantityText, _totalAmountText;
@@ -34,7 +32,8 @@ public class ProductView : MonoBehaviour
 	{
 		_trackableEventHandler.OnTrackingFounded += () =>
 		{
-			StartCoroutine(ApiService.Instance.GetProduct(GlobalId, SetProduct));
+			//StartCoroutine(ApiService.Instance.GetProduct(GlobalId, SetProduct));
+			SetProduct(Product);
 		};
 	}
 
@@ -57,5 +56,12 @@ public class ProductView : MonoBehaviour
 
 	public void Confirm()
 	{
+		if (SelectedQuantity <= 0)
+			return;
+
+		_trackableEventHandler.TimeToShowAgain = 10;
+		_trackableEventHandler.OnTrackingLost ();
+
+		OrderManager.Instance.Order.Items.Add (new Order.OrderItem (){ Product = Product, Quantity = SelectedQuantity });
 	}
 }

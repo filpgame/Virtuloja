@@ -9,10 +9,7 @@ public class OrderManager : MonoBehaviour
 		set;
 	}
 
-	public Order Order {
-		get;
-		set;
-	}
+	public Order Order;
 
 	private static OrderManager _instance;
 	public static OrderManager Instance
