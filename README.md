@@ -9,7 +9,7 @@ A interação com os recursos (botões, qr codes, etc) é feita com Gaze Interac
 
 A experiência é concluída com o seguinte fluxo:
 
- - Usuário olha para o QR Code de Check-in localizado na entrada da Loja. Mensagem de boas vindas do Estabelecimento, usuário interage com o botão para confirmar check-in.
+ - Usuário olha para o QR Code de Check-in localizado na entrada da Loja. Mensagem de boas vindas do Estabelecimento aparece, usuário interage com o botão para confirmar check-in.
  - Usuário olha para o QR Code do produto que deseja adicionar a seu carrinho. Popup para seleção de quantidades aparece, usuário interage e confirma quantidade.
  - Usuário olha para o QR Code de Checkout localizado na saída da Loja. Popup com detalhes da compra, seleção de cartão e confirmação de pagamento aparece para finalização e liberação para saída da loja. 
 
