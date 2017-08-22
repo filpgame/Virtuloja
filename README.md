@@ -15,3 +15,6 @@ A experiência é concluída com o seguinte fluxo:
 
 A ideia futura é conseguir mapear as intenções e escolhas do usuário para otimizar a experiência de pagamento. Podendo ainda direcionar conteúdos específicos para cada usuário usando o óculos.
 Pretendemos usar tecnologia de óculos de Realidade Aumentada, inclusive explorando novos inputs para interação. Como, por exemplo, botões localizados ao lado do óculos. 
+
+
+![](https://i.gyazo.com/6c6b8cf34b32c4a228c835ecec8b9854.jpg)
