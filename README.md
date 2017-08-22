@@ -16,5 +16,11 @@ A experiência é concluída com o seguinte fluxo:
 A ideia futura é conseguir mapear as intenções e escolhas do usuário para otimizar a experiência de pagamento. Podendo ainda direcionar conteúdos específicos para cada usuário usando o óculos.
 Pretendemos usar tecnologia de óculos de Realidade Aumentada, inclusive explorando novos inputs para interação. Como, por exemplo, botões localizados ao lado do óculos. 
 
+Check-in
+![](https://i.gyazo.com/1799d00648eb162efb5fb2090e3f7ee3.gif)
 
-![](https://i.gyazo.com/6c6b8cf34b32c4a228c835ecec8b9854.jpg)
+Produto
+![](https://i.gyazo.com/5cb859ba085803f106a28e73323d5dec.gif)
+
+Checkout
+![](https://i.gyazo.com/dadc2158162fd2869bd692fe986877db.jpg)
