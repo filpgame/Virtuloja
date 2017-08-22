@@ -17,10 +17,13 @@ A ideia futura é conseguir mapear as intenções e escolhas do usuário para ot
 Pretendemos usar tecnologia de óculos de Realidade Aumentada, inclusive explorando novos inputs para interação. Como, por exemplo, botões localizados ao lado do óculos. 
 
 - Check-in
+
 ![](https://i.gyazo.com/1799d00648eb162efb5fb2090e3f7ee3.gif)
 
 - Produto
+
 ![](https://i.gyazo.com/5cb859ba085803f106a28e73323d5dec.gif)
 
 - Checkout
+
 ![](https://i.gyazo.com/dadc2158162fd2869bd692fe986877db.jpg)
